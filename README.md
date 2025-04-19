@@ -47,6 +47,25 @@ uv run jester.py
 
 The server will start and listen for MCP connections using Server-Sent Events (SSE) transport.
 
+## MCP Client Configuration
+
+To connect to this MCP server from a client (like Cursor), you need to configure your MCP client settings. Create or update your mcp config file in the appropriate location:
+
+
+Add the following:
+
+```json
+{
+  "mcpServers": {
+    "jester": {
+      "url": "http://localhost:8000/sse"
+    }
+  }
+}
+```
+
+This configuration tells your MCP client to connect to the Jester server running on localhost port 8000 using SSE transport.
+
 ## Available Tools
 
 ### `hello_jester`
