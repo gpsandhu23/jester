@@ -66,6 +66,8 @@ Add the following:
 
 This configuration tells your MCP client to connect to the Jester server running on localhost port 8000 using SSE transport.
 
+List of existing MCP clients https://modelcontextprotocol.io/clients
+
 ## Available Tools
 
 ### `hello_jester`
